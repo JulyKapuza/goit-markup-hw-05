@@ -80,7 +80,7 @@ address {
 /* Page header */
   .page-header{
     border-bottom: 1px solid var(--border-color);
-    
+      
   }
 
 .container {
@@ -124,7 +124,7 @@ address {
 /* Site nav */
 .site-nav {
     display: flex;
-
+    
 }
 .site-nav .link {
     display: block;
@@ -150,8 +150,25 @@ address {
 
 .site-nav .link.current {
     color: var(--accent-color);
-}
+   
 
+}
+.site-nav .item{
+    position: relative;
+}
+.current::after{
+
+    position: absolute;
+    display: inline-block;
+    content: '';
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    bottom: 0;
+    left: 0;
+    
+}
 
 /* Site contacts */
 .contacts {
@@ -674,6 +691,7 @@ address {
     line-height: 1.56;
     color: var(--white-color);
     width: 322px;
+    height: 294px;
     opacity: 0;
    
    
@@ -688,7 +706,7 @@ address {
     position: absolute;
     content: '';
     width: 100%;
-    height: 100%;
+    height: 294px;
     background: rgba(33, 150, 243, 0.9);
     opacity: 0;
 }
@@ -697,8 +715,6 @@ address {
     opacity: 1;
 
 }
-
-
 
 
 
