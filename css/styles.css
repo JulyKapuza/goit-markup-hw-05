@@ -378,6 +378,8 @@ address {
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--white-color);
+
+    text-align: center;
 }
 
 /* Team */
@@ -705,3 +707,51 @@ address {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+
+    width: 100%;
+    height: 100%;
+}
+.backdrop.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+.modal{
+    width: 528px;
+    height: 581px;
+    background-color: var(--white-color);
+
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.modal-btn{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+   align-items: center;
+
+}
+
+.btn-close{
+    width: 18px;
+    height: 18px;
+}
